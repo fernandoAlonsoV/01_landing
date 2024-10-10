@@ -1,3 +1,37 @@
+/* Animation */
+.anim-bottom-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: animBottomUp 0.5s linear forwards;
+}
+.anim-show-up {
+  opacity: 0;
+  animation: animShowUp 0.8s linear forwards;
+}
+//animation to move up elements
+@keyframes animBottomUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes animShowUp {
+  0% {
+    opacity: 0; /* Comienza completamente invisible */
+  }
+  25% {
+    opacity: 0.25; /* Llega al 25% de opacidad */
+  }
+  50% {
+    opacity: 0.5; /* Llega al 50% de opacidad */
+  }
+  75% {
+    opacity: 0.75; /* Llega al 75% de opacidad */
+  }
+  100% {
+    opacity: 1; /* Termina completamente visible */
+  }
+}
 .hero__content {
   width: 70%;
   position: relative;
@@ -31,7 +65,6 @@
     @include between(mobile, desktop) {
       font-size: 1.4rem;
     }
-    // animation-delay: 0.5s;
   }
   &-action-buy {
     display: inline-block;
@@ -41,7 +74,6 @@
     text-align: center;
     color: var(--color-primary);
     background-color: var(--text-color-main);
-    // animation-delay: 0.1s;
     @include between(mobile, desktop) {
       font-size: 1.7rem;
     }
@@ -69,10 +101,3 @@
     }
   }
 }
-
-/* Animation */
-// .anim {
-//   opacity: 0;
-//   transform: translateY(30px);
-//   animation: moveup 0.5s linear forwards;
-// }

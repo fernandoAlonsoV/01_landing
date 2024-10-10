@@ -21,15 +21,6 @@ $breakpoints: (
   desktop: 1025px,
 );
 
-//animation to move up elements
-
-@keyframes moveup {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 :root {
   --z-back: -10;
   --z-normal: 1;
