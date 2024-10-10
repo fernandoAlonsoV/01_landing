@@ -1,0 +1,16 @@
+{
+  "name": "01_landing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass-build-only": "sass src/scss/styles.scss .dist/styles.css",
+    "sass-build-all": "sass --watch src/scss/styles.scss:dist/styles.css"
+  },
+  "keywords": [],
+  "author": "Fernando Alonso",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.79.4"
+  }
+}

@@ -1,0 +1,39 @@
+:root {
+  /* Colores principales (Brand) */
+  --color-primary: #53212b; /* Púrpura profundo: Color principal de marca para encabezados, botones principales */
+
+  /** 
+      * Colores de texto 
+      * Colores de bordes
+      */
+  --text-color-main: #e4e4e4; /* Color de texto oscuro derivado del púrpura profundo */
+
+  /* Colores interactivos */
+  --hover-color: #cacbcc;
+}
+/*
+* variables de Breakpoints
+*/
+
+$breakpoints: (
+  mobile: 767px,
+  tablet: 1024px,
+  desktop: 1025px,
+);
+
+//animation to move up elements
+
+@keyframes moveup {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+:root {
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
